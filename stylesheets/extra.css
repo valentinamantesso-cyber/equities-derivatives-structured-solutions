@@ -1,0 +1,85 @@
+:root {
+  --md-primary-fg-color: #1f2430;
+  --md-primary-fg-color--light: #2c3244;
+  --md-primary-fg-color--dark: #14171f;
+  --md-accent-fg-color: #c9a227;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 225;
+  --md-default-bg-color: #14161d;
+  --md-default-fg-color: #e8e6e1;
+  --md-default-fg-color--light: #c7c4bd;
+  --md-default-fg-color--lighter: #8a877f;
+  --md-primary-fg-color: #1a1d26;
+  --md-primary-bg-color: #f2ede0;
+  --md-accent-fg-color: #d4af37;
+  --md-typeset-a-color: #d4af37;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #1f2430;
+  --md-primary-bg-color: #f2ede0;
+  --md-accent-fg-color: #a8821f;
+  --md-typeset-a-color: #a8821f;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #1a1d26;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
+
+.md-nav--primary .md-nav__title {
+  color: #f2ede0;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.md-nav--primary .md-nav__link {
+  color: #c7c4bd;
+  border-radius: 6px;
+  margin: 2px 10px;
+  padding: 8px 12px;
+}
+
+.md-nav--primary .md-nav__link:hover {
+  color: #f2ede0;
+}
+
+.md-nav--primary .md-nav__link:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+  color: #f2ede0;
+}
+
+.md-nav--primary .md-nav__link--active,
+.md-nav--primary .md-nav__link[aria-current="page"] {
+  background-color: #d4af37;
+  color: #14161d !important;
+  font-weight: 600;
+}
+
+/* Tira o título "Guia do Estagiário" de dentro da sidebar */
+.md-nav--primary .md-nav__title {
+  display: none;
+}
+
+/* Header superior limpo: sem logo, sem título, sem busca, sem toggle de tema */
+.md-header__title,
+.md-header__button.md-logo,
+.md-search,
+[data-md-component="palette"] {
+  display: none !important;
+}
+
+/* Coluna de conteúdo mais larga, para o título da home quebrar em no máximo 2 linhas */
+.md-grid {
+  max-width: 80rem;
+}
