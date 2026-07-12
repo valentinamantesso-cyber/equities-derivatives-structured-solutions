@@ -34,6 +34,9 @@
   background-color: #1a1d26;
   border-radius: 8px;
   padding: 0.5rem 0;
+  height: auto !important;
+  max-height: calc(100vh - 2rem) !important;
+  overflow-y: auto;
 }
 
 .md-nav--primary .md-nav__title {
