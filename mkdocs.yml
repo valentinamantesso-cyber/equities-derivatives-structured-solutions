@@ -1,0 +1,53 @@
+site_name: Guia do Estagiário
+site_description: Conteúdo de referência produzido durante o estágio, para quem vier depois.
+
+theme:
+  name: material
+  language: pt-BR
+  font:
+    text: Inter
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Alternar para modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para modo escuro
+  features:
+    - navigation.top
+    - navigation.indexes
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Início: index.md
+  - Glossário: glossario.md
+  - Guia Básico - Equities, Derivatives e Structured Solutions: derivativos/index.md
+  - Opções: opcoes/index.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
