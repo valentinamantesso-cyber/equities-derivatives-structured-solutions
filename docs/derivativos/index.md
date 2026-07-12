@@ -1,3 +1,3 @@
-# Guia Básico - Equities, Derivatives e Structured Solutions
+# Guia Básico - Derivativos
 
 *Em construção.*

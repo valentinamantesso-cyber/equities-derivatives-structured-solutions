@@ -1,5 +1,6 @@
-site_name: Guia do Estagiário
+site_name: Equities, Derivatives and Structured Solutions
 site_description: Conteúdo de referência produzido durante o estágio, para quem vier depois.
+copyright: Feito por Valentina Mantesso
 
 theme:
   name: material
@@ -34,11 +35,16 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/quiz.js
+
 nav:
   - Início: index.md
   - Glossário: glossario.md
-  - Guia Básico - Equities, Derivatives e Structured Solutions: derivativos/index.md
+  - Guia Básico - Derivativos: derivativos/index.md
   - Opções: opcoes/index.md
+  - Questões: questoes/index.md
 
 markdown_extensions:
   - admonition
