@@ -214,3 +214,20 @@
 .quiz-review-answer--correct {
   color: #4caf50;
 }
+
+/* Payoff charts */
+.payoff-chart {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 1.25rem auto;
+  border: 1px solid #2c3244;
+  border-radius: 8px;
+  background-color: rgba(31, 36, 48, 0.2);
+}
+
+[data-md-color-scheme="default"] .payoff-chart {
+  background-color: #fcfcfb;
+  border-color: #e3dcc8;
+}
