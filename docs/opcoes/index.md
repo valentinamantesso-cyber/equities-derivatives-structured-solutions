@@ -20,7 +20,6 @@ Os principais elementos de um contrato de opção são:
 - **Prêmio:** preço pago pela opção
 - **Vencimento:** data final do contrato
 - **Quantidade:** número de ativos abrangidos
-- **Estilo de exercício:** define quando a opção pode ser exercida
 
 Além desses elementos, o preço da opção é influenciado pelo preço do ativo, prazo, volatilidade, juros e dividendos esperados.
 
@@ -448,7 +447,3 @@ Não basta, porém, escolher duas opções quaisquer. O preço econômico da pos
 Caso o investidor não queira receber ou entregar o ativo no vencimento, pode encerrar as duas opções antes do exercício e montar um novo sintético com vencimento posterior.
 
 Se as opções forem mantidas abertas e terminarem dentro do dinheiro, o exercício poderá gerar a compra ou a venda efetiva do ativo.
-
----
-
-*Padrão sugerido para os gráficos de payoff: eixo horizontal com o preço do ativo no vencimento, eixo vertical com o lucro/prejuízo, linha em zero, strikes e break-evens marcados, prêmios incluídos no cálculo, legenda separando cada perna e o resultado combinado.*
