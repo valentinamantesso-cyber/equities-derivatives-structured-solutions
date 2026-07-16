@@ -104,21 +104,6 @@ Questões baseadas no conteúdo da página de [Opções](../opcoes/index.md).
       "correct": 1
     },
     {
-      "question": "Qual estratégia é montada com ação comprada + put comprada + call vendida, segundo o texto?",
-      "options": ["Protective put", "Straddle", "Collar", "Strangle"],
-      "correct": 2
-    },
-    {
-      "question": "Como se monta um straddle comprado?",
-      "options": [
-        "Compra de uma call e compra de uma put com o mesmo strike e vencimento",
-        "Compra de uma call e venda de uma put com strikes diferentes",
-        "Compra de duas calls com strikes diferentes",
-        "Venda de uma call e de uma put com o mesmo strike"
-      ],
-      "correct": 0
-    },
-    {
       "question": "Como se monta um termo sintético comprado, segundo o texto?",
       "options": [
         "Compra de call + venda de put (mesmo strike e vencimento)",

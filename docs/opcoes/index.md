@@ -285,98 +285,7 @@ Essa operação não deve ser confundida com a venda a descoberto de uma ação,
 
 ![Payoff da call vendida a descoberto](../assets/payoffs/naked-call.svg){ .payoff-chart }
 
-## 15. Outras estratégias comuns
-
-As quatro posições básicas podem ser combinadas para criar diferentes perfis de risco e retorno.
-
-### Protective put
-
-**Montagem:** ação comprada + put comprada.
-
-O investidor mantém o potencial de valorização da ação, mas compra uma put para limitar sua perda caso o preço caia. A estratégia funciona de maneira semelhante à contratação de um seguro: o prêmio pago pela put representa o custo da proteção.
-
-- **Expectativa:** alta do ativo, mas com proteção contra quedas
-- **Ganho potencial:** acompanha a valorização da ação, descontado o prêmio
-- **Perda máxima:** limitada pelo strike da put, considerando o preço de compra da ação e o prêmio pago
-
-![Payoff da protective put](../assets/payoffs/protective-put.svg){ .payoff-chart }
-
-### Collar
-
-**Montagem:** ação comprada + put comprada + call vendida.
-
-A put estabelece um nível de proteção para a queda, enquanto o prêmio recebido pela call ajuda a reduzir ou financiar o custo da put. Em contrapartida, o ganho da posição fica limitado acima do strike da call.
-
-- **Expectativa:** manutenção ou alta moderada do ativo
-- **Ganho máximo:** limitado pelo strike da call
-- **Perda máxima:** limitada pelo strike da put
-- **Custo:** pode ser reduzido pelo prêmio recebido na venda da call
-
-![Payoff do collar](../assets/payoffs/collar.svg){ .payoff-chart }
-
-### Trava de alta com calls
-
-**Montagem:** compra de uma call + venda de outra call com strike superior (mesmo ativo-objeto, quantidade e vencimento).
-
-É utilizada quando se espera uma alta moderada do ativo. A call vendida reduz o custo da operação, mas também limita o ganho.
-
-- **Expectativa:** alta moderada
-- **Ganho máximo:** diferença entre os strikes menos o prêmio líquido pago
-- **Perda máxima:** prêmio líquido pago
-- **Break-even:** strike da call comprada mais o prêmio líquido pago
-
-![Payoff da trava de alta com calls](../assets/payoffs/bull-call-spread.svg){ .payoff-chart }
-
-### Trava de baixa com puts
-
-**Montagem:** compra de uma put + venda de outra put com strike inferior (mesmo ativo-objeto, quantidade e vencimento).
-
-É utilizada quando se espera uma queda moderada do ativo. A put vendida reduz o custo inicial, mas limita o ganho caso o ativo caia muito.
-
-- **Expectativa:** queda moderada
-- **Ganho máximo:** diferença entre os strikes menos o prêmio líquido pago
-- **Perda máxima:** prêmio líquido pago
-- **Break-even:** strike da put comprada menos o prêmio líquido pago
-
-![Payoff da trava de baixa com puts](../assets/payoffs/bear-put-spread.svg){ .payoff-chart }
-
-### Straddle comprado
-
-**Montagem:** compra de uma call + compra de uma put com o mesmo strike e vencimento.
-
-A estratégia é utilizada quando se espera um movimento forte do ativo, mas não se sabe em qual direção. O investidor pode ganhar tanto com uma alta quanto com uma queda expressiva. Porém, como compra duas opções, precisa que o movimento seja suficiente para compensar os dois prêmios pagos.
-
-- **Expectativa:** aumento relevante da volatilidade ou movimento forte do ativo
-- **Ganho potencial:** elevado em altas ou quedas fortes
-- **Perda máxima:** soma dos prêmios pagos
-- **Maior perda:** ocorre quando o ativo termina próximo ao strike
-
-A estratégia possui dois pontos de break-even:
-
-- **Break-even superior:** strike + total dos prêmios
-- **Break-even inferior:** strike − total dos prêmios
-
-![Payoff do straddle comprado](../assets/payoffs/long-straddle.svg){ .payoff-chart }
-
-### Strangle comprado
-
-**Montagem:** compra de uma put com strike inferior + compra de uma call com strike superior (mesmo ativo-objeto e vencimento).
-
-Assim como o straddle, o strangle é utilizado quando se espera um movimento forte sem uma direção definida. Seu custo normalmente é menor, mas o ativo precisa apresentar uma oscilação maior para gerar lucro.
-
-- **Expectativa:** movimento forte ou aumento da volatilidade
-- **Ganho potencial:** elevado em altas ou quedas fortes
-- **Perda máxima:** soma dos prêmios pagos
-- **Maior perda:** ocorre quando o ativo termina entre os dois strikes
-
-Pontos de break-even:
-
-- **Break-even superior:** strike da call + total dos prêmios
-- **Break-even inferior:** strike da put − total dos prêmios
-
-![Payoff do strangle comprado](../assets/payoffs/long-strangle.svg){ .payoff-chart }
-
-## 16. Paridade entre call e put
+## 15. Paridade entre call e put
 
 Calls, puts, o ativo à vista e contratos a termo possuem uma relação de equivalência entre seus preços. Essa relação é conhecida como **paridade put-call**.
 
@@ -386,7 +295,7 @@ Caso uma combinação fosse negociada por um preço muito diferente da outra, po
 
 É essa relação que permite reproduzir um contrato a termo por meio de uma call e de uma put com o mesmo ativo, strike e vencimento.
 
-## 17. Termo sintético
+## 16. Termo sintético
 
 ### O que é?
 
